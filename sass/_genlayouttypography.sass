@@ -1,21 +1,46 @@
 /* GENERAL LAYOUT & TYPOGRAPHY */
 
 body
-  margin: 0
-  padding: 0
-  font
-    size: 16px
-    family: $sans-serif
+    margin: 0
+    padding: 0
+    font:
+        size: 16px
+        family: $sans-serif
+    margin-top: $header-height + (2 * $padding-top-bottom)
+    background-color: $white
 
-
-/* Top and bottom "padding" is 30px, or 1.875em if 1em = 16px */
-/* Sides "padding" is 10px, or 0.625em if 1em = 16px */
 .container
-  margin: 0 auto
-  padding: 3.125% 1.041666666666%
-  width: 97.9166666%
-  max-width: 960px
-  overflow: hidden
-  text-align: left
+    /* Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px
+    margin: 0 auto
+    /* Sides "padding" is 10px, or 0.625em if 1em = 16px
+    padding: 3.125% 1.041666666666%
+    width: 97.9166666%
+    /* Max-width is 1000px, or 62.5em if 1em = 16px
+    max-width: 62.5em
+    overflow: hidden
+    text-align: left
 
+.bg-general
+    background-color: $dark-grey
 
+p
+    font:
+        size: 1em
+    line-height: 1.5em
+    margin-bottom: 0.75em
+
+h1
+    font:
+        size: 2em
+    text-align: center
+    margin-bottom: 1em
+
+h2
+    font:
+        size: 1.5em
+    margin-bottom: 0.75em
+
+h6
+    font:
+        weight: normal
+        size: 0.7em

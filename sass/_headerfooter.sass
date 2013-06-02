@@ -1,10 +1,18 @@
 /* HEADER AND FOOTER */
 
 header
-  background-color: $green
-  @include box-shadow(inset 0 0 0.6em $dark-grey)
+	background-color: $white
+	z-index: 2
+	position: fixed
+	top: 0em
+	width: 100%
+	line-height: $header-height
+	font:
+		size: 1.5em
+
+	+shadow(0 0 5em $white)
 
 footer
-  font
-    family: $serif
-  text-align: center
+	font:
+		family: $serif
+	text-align: center

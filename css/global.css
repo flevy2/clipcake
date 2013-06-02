@@ -35,44 +35,87 @@ a {
 /* GENERAL LAYOUT & TYPOGRAPHY */
 body {
   margin: 0;
-  padding: 0; }
-  body font {
-    size: 16px;
-    family: Open Sans; }
+  padding: 0;
+  font-size: 16px;
+  font-family: Open Sans;
+  margin-top: 6.75em;
+  background-color: white; }
 
-/* Top and bottom "padding" is 30px, or 1.875em if 1em = 16px */
-/* Sides "padding" is 10px, or 0.625em if 1em = 16px */
 .container {
+  /* Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px */
   margin: 0 auto;
+  /* Sides "padding" is 10px, or 0.625em if 1em = 16px */
   padding: 3.125% 1.04167%;
   width: 97.91667%;
-  max-width: 960px;
+  /* Max-width is 1000px, or 62.5em if 1em = 16px */
+  max-width: 62.5em;
   overflow: hidden;
   text-align: left; }
 
+.bg-general {
+  background-color: #666666; }
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em; }
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.75em; }
+
+h6 {
+  font-weight: normal;
+  font-size: 0.7em; }
+
 /* HEADER AND FOOTER */
 header {
-  background-color: #ccffcc;
-  -webkit-box-shadow: inset 0 0 0.6em #666666;
-  -moz-box-shadow: inset 0 0 0.6em #666666;
-  box-shadow: inset 0 0 0.6em #666666; }
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  line-height: 3em;
+  font-size: 1.5em;
+  -webkit-box-shadow: 0 0 5em white;
+  -moz-box-shadow: 0 0 5em white;
+  box-shadow: 0 0 5em white; }
 
-footer font {
-  family: Bitter; }
+footer {
+  font-family: Bitter;
+  text-align: center; }
 
 /* HOMEPAGE DESIGN */
+.hero {
+  background-image: url("../images/lolcatsdotcomlikemyself.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.hero-text {
+  font-family: Bitter;
+  margin: 15% 20%;
+  padding: 3.125% 2%;
+  background: white;
+  -webkit-box-shadow: inset 0 0 3em #666666, 0 0 1em blue;
+  -moz-box-shadow: inset 0 0 3em #666666, 0 0 1em blue;
+  box-shadow: inset 0 0 3em #666666, 0 0 1em blue;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em; }
+
 .col-3 {
   float: left;
-  width: 30%;
-  color: white; }
+  width: 28%;
+  padding: 3.125% 2%; }
   .col-3:nth-child(2) {
-    margin: 0 5%; }
+    margin: 0 2%; }
 
 .col-3-bg {
-  background-color: #520063; }
-
-.test {
-  background-color: blue; }
-
-.foreground {
-  background-color: white; }
+  background-color: #520063;
+  color: white; }
