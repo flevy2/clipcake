@@ -1,0 +1,21 @@
+$serif: Bitter
+$sans-serif: Open Sans
+$white: #FFF
+$green: #CCFFCC
+$purple: #520063
+$blue: #0000FF
+$dark-grey: #666
+
+// Mixins
+@mixin box-shadow($shadows...)
+  -webkit-box-shadow: $shadows
+  -moz-box-shadow: $shadows
+  box-shadow: $shadows
+
+
+
+// Imported Stylesheets
+@import "reset"
+@import "genlayouttypography"
+@import "headerfooter"
+@import "homepage"
