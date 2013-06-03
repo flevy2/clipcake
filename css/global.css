@@ -53,7 +53,7 @@ body {
   text-align: left; }
 
 .bg-general {
-  background-color: #666666; }
+  background-color: #ccffcc; }
 
 p {
   font-size: 1em;
@@ -82,9 +82,9 @@ header {
   width: 100%;
   line-height: 3em;
   font-size: 1.5em;
-  -webkit-box-shadow: 0 0 5em white;
-  -moz-box-shadow: 0 0 5em white;
-  box-shadow: 0 0 5em white; }
+  -webkit-box-shadow: 0 0 1em #666666;
+  -moz-box-shadow: 0 0 1em #666666;
+  box-shadow: 0 0 1em #666666; }
 
 footer {
   font-family: Bitter;
