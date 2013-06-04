@@ -5,14 +5,21 @@ $green: #CCFFCC
 $purple: #520063
 $blue: #0000FF
 $dark-grey: #666
+$header-height: 3em
+
+// Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px
+$padding-top-bottom: 1.875em
 
 // Mixins
-@mixin box-shadow($shadows...)
-  -webkit-box-shadow: $shadows
-  -moz-box-shadow: $shadows
-  box-shadow: $shadows
+=shadow($shadow...)
+	-webkit-box-shadow: $shadow
+	-moz-box-shadow: $shadow
+	box-shadow: $shadow
 
-
+=radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	border-radius: $radius
 
 // Imported Stylesheets
 @import "reset"
