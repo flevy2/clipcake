@@ -2,17 +2,20 @@
 
 header
 	background-color: $white
+	opacity: 85%
 	z-index: 2
 	position: fixed
 	top: 0em
 	width: 100%
 	line-height: $header-height
+	/* Header text font size is 14px, or 0.875em if 1em = 16px.
 	font:
-		size: 1.5em
-
-	+shadow(0 0 1em $dark-grey)
+		size: 0.875em
+		family: $sans-serif
 
 footer
 	font:
 		family: $serif
 	text-align: center
+	background-color: $footer-bg
+	+bg-img('../images/bg-footer.png', 0 0, repeat-x)

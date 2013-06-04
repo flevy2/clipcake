@@ -1,10 +1,11 @@
-$serif: Bitter
-$sans-serif: Open Sans
+$serif: 'Sanchez', serif
+$sans-serif: 'Montserrat', sans-serif
 $white: #FFF
 $green: #CCFFCC
 $purple: #520063
 $blue: #0000FF
 $dark-grey: #666
+$footer-bg: #F8F8F8
 $header-height: 3em
 
 // Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px
@@ -20,6 +21,11 @@ $padding-top-bottom: 1.875em
 	-webkit-border-radius: $radius
 	-moz-border-radius: $radius
 	border-radius: $radius
+
+=bg-img($imgpath, $position, $repeat)
+	background-image: url($imgpath)
+	position: $position
+	repeat: $repeat
 
 // Imported Stylesheets
 @import "reset"

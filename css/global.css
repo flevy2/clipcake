@@ -37,14 +37,13 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: Open Sans;
   margin-top: 6.75em;
   background-color: white; }
 
 .container {
-  /* Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px */
   margin: 0 auto;
-  /* Sides "padding" is 10px, or 0.625em if 1em = 16px */
+  /* Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px.
+   * Sides "padding" is 10px, or 0.625em if 1em = 16px */
   padding: 3.125% 1.04167%;
   width: 97.91667%;
   /* Max-width is 1000px, or 62.5em if 1em = 16px */
@@ -76,19 +75,23 @@ h6 {
 /* HEADER AND FOOTER */
 header {
   background-color: white;
+  opacity: 85%;
   z-index: 2;
   position: fixed;
   top: 0em;
   width: 100%;
   line-height: 3em;
-  font-size: 1.5em;
-  -webkit-box-shadow: 0 0 1em #666666;
-  -moz-box-shadow: 0 0 1em #666666;
-  box-shadow: 0 0 1em #666666; }
+  /* Header text font size is 14px, or 0.875em if 1em = 16px. */
+  font-size: 0.875em;
+  font-family: "Montserrat", sans-serif; }
 
 footer {
-  font-family: Bitter;
-  text-align: center; }
+  font-family: "Sanchez", serif;
+  text-align: center;
+  background-color: #f8f8f8;
+  background-image: url("../images/bg-footer.png");
+  position: 0 0;
+  repeat: repeat-x; }
 
 /* HOMEPAGE DESIGN */
 .hero {
@@ -98,7 +101,7 @@ footer {
   background-size: cover; }
 
 .hero-text {
-  font-family: Bitter;
+  font-family: "Sanchez", serif;
   margin: 15% 20%;
   padding: 3.125% 2%;
   background: white;
@@ -117,5 +120,7 @@ footer {
     margin: 0 2%; }
 
 .col-3-bg {
-  background-color: #520063;
-  color: white; }
+  color: white;
+  background-image: url("../images/bg-light.png");
+  position: 0 0;
+  repeat: repeat; }
