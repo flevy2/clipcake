@@ -1,17 +1,27 @@
+// VARIABLES
+
+// Font characteristics
+$font-bold: #131313
 $serif: 'Sanchez', serif
+$serif-heading: #ef4137 
 $sans-serif: 'Montserrat', sans-serif
+$sans-serif-paragraph: #464646
+
+// Other colors
 $white: #FFF
 $green: #CCFFCC
 $purple: #520063
 $blue: #0000FF
 $dark-grey: #666
 $footer-bg: #F8F8F8
+
 $header-height: 3em
 
-// Top and bottom "padding" is 30px, or 1.875em, or 3.125%, if 1em = 16px
-$padding-top-bottom: 1.875em
+// Top and bottom "padding" is 30px, or 3em, or 3%, if 1em = 10px
+$padding-top-bottom: 3em
 
-// Mixins
+
+// MIXINS
 =shadow($shadow...)
 	-webkit-box-shadow: $shadow
 	-moz-box-shadow: $shadow
@@ -27,7 +37,8 @@ $padding-top-bottom: 1.875em
 	position: $position
 	repeat: $repeat
 
-// Imported Stylesheets
+
+// IMPORTED STYLESHEETS
 @import "reset"
 @import "genlayouttypography"
 @import "headerfooter"
