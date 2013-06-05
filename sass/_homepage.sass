@@ -1,22 +1,18 @@
 /* HOMEPAGE DESIGN */
 
 .hero
-	background:
-		image: url("../images/lolcatsdotcomlikemyself.jpg")
-		repeat: no-repeat
-		position: center
-		size: cover
+	+bg-img('../images/lolcatsdotcomlikemyself.jpg', center, no-repeat)
+	background-size: cover
+	color: $bold-color
+	text-align: center
+
+.hero-bg
+	background-color: $light-grey
+	margin-top: -6em
 
 .hero-text
-	font:
-		family: $serif
-	margin: 15% 20%
+	margin: 15% 10%
 	padding: 3% 2%
-	background: $white
-
-	+shadow(inset 0 0 3em $dark-grey, 0 0 1em $blue)
-
-	+radius(0.75em)
 
 .col-3
 	float: left
@@ -24,8 +20,7 @@
 	padding: 3% 2%
 
 	&:nth-child(2)
-		margin: 0 2%
+		margin: 0% 2%
 
 .col-3-bg
-	color: $white
 	+bg-img('../images/bg-light.png', 0 0, repeat)
