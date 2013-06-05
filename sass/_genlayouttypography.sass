@@ -6,7 +6,7 @@ body
     font:
         size: 10px
     margin-top: 6em
-    background-color: $white
+    background-color: $red
 
 .container
     margin: 0 auto
@@ -18,6 +18,8 @@ body
     overflow: hidden
     text-align: left
 
+.content
+    +bg-img('../images/bg-light.png', 0 0, repeat)
 
 /* All font sizes calculated based on 1em = 10px.
 p
@@ -26,7 +28,7 @@ p
         size: 1.7em
         weight: normal
     color: $sans-serif-p
-    line-height: 3em
+    line-height: 2em
 
 h1
     font:
@@ -54,5 +56,5 @@ h4
         weight: normal
     text-transform: capitalize
     text-align: center
-    line-height: 3em
+    line-height: 2em
     color: $serif-heading
