@@ -12,6 +12,8 @@ $white: #FFF
 $light-grey: #666
 $footer-bg: #F8F8F8
 
+$header-height: 6em
+
 // MIXINS
 =shadow($shadow...)
 	-webkit-box-shadow: $shadow
@@ -36,8 +38,17 @@ $footer-bg: #F8F8F8
 		size: 1.4em
 	text-transform: uppercase
 
-	&:link, a:visited, a:hover
-		color: inherit
+=link($color, $padding, $border-width, $border-style, $border-color)
+	a:link, a:visited, a:hover, a:focus
+		text-decoration: none
+		color: $color
+		padding: $padding
+		border-right: 
+			width: $border-width
+			style: $border-style
+			color: $border-color
+		&:last-child
+			border: none
 
 
 // IMPORTED STYLESHEETS

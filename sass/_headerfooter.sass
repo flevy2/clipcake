@@ -8,16 +8,16 @@ header
 	position: fixed
 	top: 0em
 	width: 100%
-	line-height: 2em
 	color: $bold-color
 	+small-bold-caps
+	+link($bold-color, 0 2%, 0.15em, solid, $bold-color)
 
 footer
 	background-color: $footer-bg
 	+bg-img('../images/bg-footer.png', 0 0, repeat-x)
-	line-height: 2em
 	color: $white
 	+small-bold-caps
-	text-align: center
-	a, a:hover, a:visited, a:focus
-		color: $white
+	+link($white, 0 2%, 0.15em, solid, $white)
+
+	.container
+		text-align: center
