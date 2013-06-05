@@ -5,41 +5,55 @@ body
     padding: 0
     font:
         size: 10px
-    margin-top: $header-height + (2 * $padding-top-bottom)
+    margin-top: 6em
     background-color: $white
 
 .container
     margin: 0 auto
-    /* Top and bottom "padding" is 30px, or 3em, or 3.125%, if 1em = 10px and max-width = 1000px.
-        Sides' "padding" is 10px, or 1em if 1em = 10px
-    padding: 3% 1%
+    /* "Padding" is 10px, or 1em, or 1%, if 1em = 10px and max-width = 1000px.
+    padding: 1%
     width: 98%
     /* Max-width is 1000px, or 100em if 1em = 10px
     max-width: 100em
     overflow: hidden
     text-align: left
 
-.bg-general
-    background-color: $green
+a
+    text-decoration: none
 
+/* All font sizes calculated based on 1em = 10px.
 p
     font:
-        size: 1em
-    line-height: 1.5em
-    margin-bottom: 0.75em
+        family: $sans-serif
+        size: 1.7em
+        weight: normal
+    color: $sans-serif-p
+    line-height: 3em
 
 h1
     font:
-        size: 2em
-    text-align: center
-    margin-bottom: 1em
+        family: $serif
+        size: 5em
+    color: $bold-color
 
 h2
     font:
-        size: 1.5em
-    margin-bottom: 0.75em
+        family: $sans-serif
+        size: 1.6em
+    color: $bold-color
+    line-height: 5em
+    text-transform: uppercase
 
-h6
+h3
+    color: $bold-color
+    +small-bold-caps
+    text-align: center
+
+h4
     font:
+        family: $serif
+        size: 2em
         weight: normal
-        size: 0.7em
+    text-transform: capitalize
+    line-height: 3em
+    color: $serif-heading
