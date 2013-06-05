@@ -50,10 +50,11 @@ body {
   overflow: hidden;
   text-align: left; }
 
-.content {
-  background-image: url("../images/bg-light.png");
-  background-position: 0 0;
-  background-repeat: repeat; }
+.header-cover {
+  margin-top: -6em; }
+
+.header-uncover {
+  padding-top: 6em; }
 
 /* All font sizes calculated based on 1em = 10px. */
 p {
@@ -148,8 +149,7 @@ footer {
   text-align: center; }
 
 .hero-bg {
-  background-color: #ff4040;
-  margin-top: -6em; }
+  background-color: #ff4040; }
 
 .hero-text {
   margin: 15% 10%;
@@ -165,6 +165,11 @@ footer {
     border-color: #131313; }
 
 .col-3-bg {
+  background-image: url("../images/bg-light.png");
+  background-position: 0 0;
+  background-repeat: repeat; }
+
+.bookcontent {
   background-image: url("../images/bg-light.png");
   background-position: 0 0;
   background-repeat: repeat; }
