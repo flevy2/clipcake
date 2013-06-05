@@ -123,6 +123,8 @@ footer {
   text-align: center; }
   footer:link, footer a:visited, footer a:hover {
     color: inherit; }
+  footer a, footer a:hover, footer a:visited, footer a:focus {
+    color: white; }
 
 /* HOMEPAGE DESIGN */
 .hero {
