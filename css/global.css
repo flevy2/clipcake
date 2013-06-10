@@ -59,7 +59,7 @@ body {
   margin-top: -6em; }
 
 .header-uncover {
-  padding-top: 6em; }
+  padding-top: 8em; }
 
 /* TYPOGRAPHY */
 /* All font sizes calculated based on 1em = 10px. */
@@ -160,7 +160,7 @@ nav {
     -moz-box-shadow: inset -0.15em 0.25em 1.5em #a00000;
     box-shadow: inset -0.15em 0.25em 1.5em #a00000;
     position: relative;
-    top: 0.03em; }
+    top: 0.02em; }
   .btn a:link, .btn a:visited, .btn a:hover, .btn a:active, .btn a:focus {
     text-decoration: none;
     color: white; }
