@@ -1,0 +1,20 @@
+.btn
+    +radius(0.5em)
+    +shadow(inset 0.15em -0.25em 1em $red-shadow)
+
+    background-color: $red
+    color: $white
+    display: inline-block
+    padding: 0.75em 1.5em
+
+    &:hover, btn:focus
+        +shadow(inset 0em 0em 1em $red-shadow)
+
+    &:active
+        +shadow(inset -0.15em 0.25em 1.5em $red-shadow)
+        position: relative
+        top: 0.03em
+
+    a:link, a:visited, a:hover, a:active, a:focus
+        text-decoration: none
+        color: $white

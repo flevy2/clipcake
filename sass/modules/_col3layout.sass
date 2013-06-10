@@ -1,0 +1,18 @@
+/* 3-COLUMN LAYOUT */
+
+.col-3
+	float: left
+	width: 28%
+	padding: 0% 1.75% 0% 3.5%
+
+	&:nth-child(5)
+		border: 
+			width: 0 0.1em
+			style: solid
+			color: $bold-color
+
+.col-3-bg
+	+bg-img('../images/bg-light.png', 0 0, repeat)
+
+	.container
+		padding: 3% 0%

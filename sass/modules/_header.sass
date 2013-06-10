@@ -1,0 +1,33 @@
+/* HEADER AND NAVIGATION */
+
+header
+	background-color: $white
+	opacity: 0.85
+	filter: alpha(opacity=85)
+	z-index: 2
+	position: fixed
+	top: 0em
+	width: 100%
+	color: $bold-color
+	@extend .small-bold-caps
+
+	.container
+		padding: 1.25% 1%
+		width: 97.5%
+
+nav
+	float: right
+	text-align: right
+	width: 48%
+	padding: 1.25% 0%
+	+link($bold-color, 0 2%, 0.15em, solid, $bold-color)
+
+.container-btn
+	float: right
+	text-align: center
+	width: 12%
+	padding: 0.45% 0% 0% 0%
+
+.logo
+	float: left
+	width: 30%

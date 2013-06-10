@@ -32,13 +32,13 @@ a {
   vertical-align: baseline;
   background: transparent; }
 
-/* GENERAL LAYOUT & TYPOGRAPHY */
+/* GENERAL LAYOUT */
 body {
   margin: 0;
   padding: 0;
   font-size: 10px;
   margin-top: 6em;
-  background-color: #ff4040; }
+  background-color: #ff4a4a; }
 
 .container {
   margin: 0 auto;
@@ -50,12 +50,18 @@ body {
   overflow: hidden;
   text-align: left; }
 
+.content {
+  background-image: url("../images/bg-light.png");
+  background-position: 0 0;
+  background-repeat: repeat; }
+
 .header-cover {
   margin-top: -6em; }
 
 .header-uncover {
   padding-top: 6em; }
 
+/* TYPOGRAPHY */
 /* All font sizes calculated based on 1em = 10px. */
 p {
   font-family: "Montserrat", sans-serif;
@@ -78,11 +84,7 @@ h2 {
 
 h3 {
   color: #131313;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1.4em;
-  text-transform: uppercase; }
+  text-align: center; }
 
 h4 {
   font-family: "Sanchez", serif;
@@ -93,7 +95,13 @@ h4 {
   line-height: 2em;
   color: #ef4137; }
 
-/* HEADER AND FOOTER */
+.small-bold-caps, h3, header, footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase; }
+
+/* HEADER AND NAVIGATION */
 header {
   background-color: white;
   opacity: 0.85;
@@ -102,63 +110,104 @@ header {
   position: fixed;
   top: 0em;
   width: 100%;
-  color: #131313;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1.4em;
-  text-transform: uppercase; }
-  header a:link, header a:visited, header a:hover, header a:focus {
+  color: #131313; }
+  header .container {
+    padding: 1.25% 1%;
+    width: 97.5%; }
+
+nav {
+  float: right;
+  text-align: right;
+  width: 48%;
+  padding: 1.25% 0%; }
+  nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus {
     text-decoration: none;
     color: #131313;
     padding: 0 2%;
     border-right-width: 0.15em;
     border-right-style: solid;
     border-right-color: #131313; }
-    header a:link:last-child, header a:visited:last-child, header a:hover:last-child, header a:focus:last-child {
+    nav a:link:last-child, nav a:visited:last-child, nav a:hover:last-child, nav a:active:last-child, nav a:focus:last-child {
       border: none; }
 
+.container-btn {
+  float: right;
+  text-align: center;
+  width: 12%;
+  padding: 0.45% 0% 0% 0%; }
+
+.logo {
+  float: left;
+  width: 30%; }
+
+.btn {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: inset 0.15em -0.25em 1em #a00000;
+  -moz-box-shadow: inset 0.15em -0.25em 1em #a00000;
+  box-shadow: inset 0.15em -0.25em 1em #a00000;
+  background-color: #ff4a4a;
+  color: white;
+  display: inline-block;
+  padding: 0.75em 1.5em; }
+  .btn:hover, .btn btn:focus {
+    -webkit-box-shadow: inset 0em 0em 1em #a00000;
+    -moz-box-shadow: inset 0em 0em 1em #a00000;
+    box-shadow: inset 0em 0em 1em #a00000; }
+  .btn:active {
+    -webkit-box-shadow: inset -0.15em 0.25em 1.5em #a00000;
+    -moz-box-shadow: inset -0.15em 0.25em 1.5em #a00000;
+    box-shadow: inset -0.15em 0.25em 1.5em #a00000;
+    position: relative;
+    top: 0.03em; }
+  .btn a:link, .btn a:visited, .btn a:hover, .btn a:active, .btn a:focus {
+    text-decoration: none;
+    color: white; }
+
+/* FOOTER */
 footer {
   background-color: #f9f0df;
   background-image: url("../images/bg-footer.png");
   background-position: 0 0;
   background-repeat: repeat-x;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1.4em;
-  text-transform: uppercase; }
-  footer a:link, footer a:visited, footer a:hover, footer a:focus {
+  color: white; }
+  footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
     text-decoration: none;
     color: white;
     padding: 0 2%;
     border-right-width: 0.15em;
     border-right-style: solid;
     border-right-color: white; }
-    footer a:link:last-child, footer a:visited:last-child, footer a:hover:last-child, footer a:focus:last-child {
+    footer a:link:last-child, footer a:visited:last-child, footer a:hover:last-child, footer a:active:last-child, footer a:focus:last-child {
       border: none; }
   footer .container {
-    text-align: center; }
+    text-align: center;
+    padding: 4.5% 0; }
 
-/* HOMEPAGE DESIGN */
+/* HERO */
 .hero {
-  background-image: url("../images/lolcatsdotcomlikemyself.jpg");
-  background-position: center;
+  background-image: url("../images/hero.jpg");
+  background-position: 50% top;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 56em;
   color: #131313;
   text-align: center; }
 
 .hero-bg {
-  background-color: #ff4040; }
+  background-image: url("../images/bg-wood.jpg");
+  background-position: 0 top;
+  background-repeat: repeat-x; }
 
 .hero-text {
   margin: 15% 10%;
   padding: 3% 2%; }
 
+/* 3-COLUMN LAYOUT */
 .col-3 {
   float: left;
-  width: 28.5%;
-  padding: 0% 1.75% 0% 3%; }
+  width: 28%;
+  padding: 0% 1.75% 0% 3.5%; }
   .col-3:nth-child(5) {
     border-width: 0 0.1em;
     border-style: solid;
@@ -168,8 +217,24 @@ footer {
   background-image: url("../images/bg-light.png");
   background-position: 0 0;
   background-repeat: repeat; }
+  .col-3-bg .container {
+    padding: 3% 0%; }
 
-.bookcontent {
-  background-image: url("../images/bg-light.png");
-  background-position: 0 0;
-  background-repeat: repeat; }
+.col-container {
+  clear: both;
+  width: 100%; }
+
+.col-2-even {
+  float: left;
+  width: 48%;
+  padding: 0% 1%; }
+
+.col-onethird {
+  float: left;
+  width: 31.33333%;
+  padding: 0% 1%; }
+
+.col-twothird {
+  float: left;
+  width: 64.66667%;
+  padding: 0% 1%; }
