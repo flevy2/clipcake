@@ -1,4 +1,5 @@
 /* STYLESHEET RESET */
+/* line 10, ../sass/base/_reset.sass */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -6,40 +7,56 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
+/* line 19, ../sass/base/_reset.sass */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 22, ../sass/base/_reset.sass */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
+/* line 25, ../sass/base/_reset.sass */
 nav ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 28, ../sass/base/_reset.sass */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
+/* line 31, ../sass/base/_reset.sass */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
+/* line 36, ../sass/base/_reset.sass */
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* GENERAL LAYOUT */
+/* line 3, ../sass/base/_generallayout.sass */
 body {
   margin: 0;
   padding: 0;
   font-size: 10px;
   margin-top: 6em;
-  background-color: #ff4a4a; }
+  background-color: #f00000;
+}
 
+/* line 11, ../sass/base/_generallayout.sass */
 .container {
   margin: 0 auto;
   /* "Padding" is 10px, or 1em, or 1%, if 1em = 10px and max-width = 1000px. */
@@ -48,44 +65,60 @@ body {
   /* Max-width is 1000px, or 100em if 1em = 10px */
   max-width: 100em;
   overflow: hidden;
-  text-align: left; }
+  text-align: left;
+}
 
+/* line 21, ../sass/base/_generallayout.sass */
 .content {
   background-image: url("../images/bg-light.png");
   background-position: 0 0;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+}
 
+/* line 24, ../sass/base/_generallayout.sass */
 .header-cover {
-  margin-top: -6em; }
+  margin-top: -6em;
+}
 
+/* line 27, ../sass/base/_generallayout.sass */
 .header-uncover {
-  padding-top: 8em; }
+  padding-top: 8em;
+}
 
 /* TYPOGRAPHY */
 /* All font sizes calculated based on 1em = 10px. */
+/* line 4, ../sass/base/_typography.sass */
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.7em;
   font-weight: normal;
   color: #464646;
-  line-height: 2em; }
+  line-height: 2em;
+}
 
+/* line 12, ../sass/base/_typography.sass */
 h1 {
   font-family: "Sanchez", serif;
   font-size: 5em;
-  color: #131313; }
+  color: #131313;
+}
 
+/* line 18, ../sass/base/_typography.sass */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6em;
   color: #131313;
   line-height: 5em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
+/* line 26, ../sass/base/_typography.sass */
 h3 {
   color: #131313;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 31, ../sass/base/_typography.sass */
 h4 {
   font-family: "Sanchez", serif;
   font-size: 2em;
@@ -93,15 +126,19 @@ h4 {
   text-transform: capitalize;
   text-align: center;
   line-height: 2em;
-  color: #ef4137; }
+  color: #ef4137;
+}
 
+/* line 41, ../sass/base/_typography.sass */
 .small-bold-caps, h3, header, footer {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.4em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 /* HEADER AND NAVIGATION */
+/* line 3, ../sass/modules/_headernav.sass */
 header {
   background-color: white;
   opacity: 0.85;
@@ -110,131 +147,201 @@ header {
   position: fixed;
   top: 0em;
   width: 100%;
-  color: #131313; }
-  header .container {
-    padding: 1.25% 1%;
-    width: 97.5%; }
+  color: #131313;
+}
+/* line 14, ../sass/modules/_headernav.sass */
+header .container {
+  padding: 1.25% 1%;
+  width: 97.5%;
+}
 
+/* line 18, ../sass/modules/_headernav.sass */
 nav {
   float: right;
   text-align: right;
   width: 48%;
-  padding: 1.25% 0%; }
-  nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus {
-    text-decoration: none;
-    color: #131313;
-    padding: 0 2%;
-    border-right-width: 0.15em;
-    border-right-style: solid;
-    border-right-color: #131313; }
-    nav a:link:last-child, nav a:visited:last-child, nav a:hover:last-child, nav a:active:last-child, nav a:focus:last-child {
-      border: none; }
+  padding: 1.25% 0%;
+}
 
+/* line 24, ../sass/modules/_headernav.sass */
 .container-btn {
   float: right;
   text-align: center;
   width: 12%;
-  padding: 0.45% 0% 0% 0%; }
+  padding: 0.45% 0% 0% 0%;
+}
 
+/* line 30, ../sass/modules/_headernav.sass */
 .logo {
   float: left;
-  width: 30%; }
+  width: 30%;
+}
 
+/* LISTS */
+/* line 3, ../sass/base/_lists.sass */
+.nav-list {
+  margin-right: 0;
+  float: right;
+}
+/* line 7, ../sass/base/_lists.sass */
+.nav-list li {
+  margin: 0;
+  display: inline-block;
+}
+/* line 11, ../sass/base/_lists.sass */
+.nav-list a:link, .nav-list a:visited, .nav-list a:hover, .nav-list a:active, .nav-list a:focus {
+  text-decoration: none;
+  padding: 0% 2%;
+  border-right: 0.15em solid #131313;
+}
+/* line 16, ../sass/base/_lists.sass */
+.nav-list a:link:last-child, .nav-list a:visited:last-child, .nav-list a:hover:last-child, .nav-list a:active:last-child, .nav-list a:focus:last-child {
+  border: none;
+}
+/* line 19, ../sass/base/_lists.sass */
+.nav-list a:link, .nav-list a:visited {
+  color: #131313;
+}
+/* line 22, ../sass/base/_lists.sass */
+.nav-list .active, .nav-list a:hover, .nav-list a:active, .nav-list a:focus {
+  color: #f00000;
+}
+
+/* BUTTONS */
+/* line 3, ../sass/base/_buttons.sass */
 .btn {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
-  -webkit-box-shadow: inset 0.15em -0.25em 1em #a00000;
-  -moz-box-shadow: inset 0.15em -0.25em 1em #a00000;
-  box-shadow: inset 0.15em -0.25em 1em #a00000;
-  background-color: #ff4a4a;
+  -webkit-box-shadow: inset 0.2em -0.3em 1em #a00000;
+  -moz-box-shadow: inset 0.2em -0.3em 1em #a00000;
+  box-shadow: inset 0.2em -0.3em 1em #a00000;
+  background-color: #f00000;
   color: white;
   display: inline-block;
-  padding: 0.75em 1.5em; }
-  .btn:hover, .btn btn:focus {
-    -webkit-box-shadow: inset 0em 0em 1em #a00000;
-    -moz-box-shadow: inset 0em 0em 1em #a00000;
-    box-shadow: inset 0em 0em 1em #a00000; }
-  .btn:active {
-    -webkit-box-shadow: inset -0.15em 0.25em 1.5em #a00000;
-    -moz-box-shadow: inset -0.15em 0.25em 1.5em #a00000;
-    box-shadow: inset -0.15em 0.25em 1.5em #a00000;
-    position: relative;
-    top: 0.02em; }
-  .btn a:link, .btn a:visited, .btn a:hover, .btn a:active, .btn a:focus {
-    text-decoration: none;
-    color: white; }
+  padding: 0.75em 1.5em;
+  border: 0.1em solid #a00000;
+}
+/* line 13, ../sass/base/_buttons.sass */
+.btn:hover, .btn btn:focus {
+  -webkit-box-shadow: inset 0.05em -0.15em 1em #a00000;
+  -moz-box-shadow: inset 0.05em -0.15em 1em #a00000;
+  box-shadow: inset 0.05em -0.15em 1em #a00000;
+}
+/* line 16, ../sass/base/_buttons.sass */
+.btn:active {
+  -webkit-box-shadow: inset 0em 0em 2.25em #a00000;
+  -moz-box-shadow: inset 0em 0em 2.25em #a00000;
+  box-shadow: inset 0em 0em 2.25em #a00000;
+  position: relative;
+  top: 0.04em;
+}
+/* line 21, ../sass/base/_buttons.sass */
+.btn a:link, .btn a:visited, .btn a:hover, .btn a:active, .btn a:focus {
+  text-decoration: none;
+  color: white;
+}
 
 /* FOOTER */
+/* line 3, ../sass/modules/_footer.sass */
 footer {
   background-color: #f9f0df;
   background-image: url("../images/bg-footer.png");
   background-position: 0 0;
   background-repeat: repeat-x;
-  color: white; }
-  footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
-    text-decoration: none;
-    color: white;
-    padding: 0 2%;
-    border-right-width: 0.15em;
-    border-right-style: solid;
-    border-right-color: white; }
-    footer a:link:last-child, footer a:visited:last-child, footer a:hover:last-child, footer a:active:last-child, footer a:focus:last-child {
-      border: none; }
-  footer .container {
-    text-align: center;
-    padding: 4.5% 0; }
+  color: white;
+}
+/* line 36, ../sass/base/_variables-etc.sass */
+footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+  text-decoration: none;
+  color: white;
+  padding: 0 2%;
+  border-right-width: 0.15em;
+  border-right-style: solid;
+  border-right-color: white;
+}
+/* line 44, ../sass/base/_variables-etc.sass */
+footer a:link:last-child, footer a:visited:last-child, footer a:hover:last-child, footer a:active:last-child, footer a:focus:last-child {
+  border: none;
+}
+/* line 10, ../sass/modules/_footer.sass */
+footer .container {
+  text-align: center;
+  padding: 4.5% 0;
+}
 
 /* HERO */
+/* line 3, ../sass/modules/_hero.sass */
 .hero {
   background-image: url("../images/hero.jpg");
   background-position: 50% top;
   background-repeat: no-repeat;
   height: 56em;
   color: #131313;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 9, ../sass/modules/_hero.sass */
 .hero-bg {
   background-image: url("../images/bg-wood.jpg");
   background-position: 0 top;
-  background-repeat: repeat-x; }
+  background-repeat: repeat-x;
+}
 
+/* line 12, ../sass/modules/_hero.sass */
 .hero-text {
   margin: 15% 10%;
-  padding: 3% 2%; }
+  padding: 3% 2%;
+}
 
 /* 3-COLUMN LAYOUT */
+/* line 3, ../sass/modules/_col3layout.sass */
 .col-3 {
   float: left;
   width: 28%;
-  padding: 0% 1.75% 0% 3.5%; }
-  .col-3:nth-child(5) {
-    border-width: 0 0.1em;
-    border-style: solid;
-    border-color: #131313; }
+  padding: 0% 1.75% 0% 3.5%;
+}
+/* line 8, ../sass/modules/_col3layout.sass */
+.col-3:nth-child(5) {
+  border-width: 0 0.1em;
+  border-style: solid;
+  border-color: #131313;
+}
 
+/* line 14, ../sass/modules/_col3layout.sass */
 .col-3-bg {
   background-image: url("../images/bg-light.png");
   background-position: 0 0;
-  background-repeat: repeat; }
-  .col-3-bg .container {
-    padding: 3% 0%; }
+  background-repeat: repeat;
+}
+/* line 17, ../sass/modules/_col3layout.sass */
+.col-3-bg .container {
+  padding: 3% 0%;
+}
 
+/* line 1, ../sass/modules/_mybooks.sass */
 .col-container {
   clear: both;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 5, ../sass/modules/_mybooks.sass */
 .col-2-even {
   float: left;
   width: 48%;
-  padding: 0% 1%; }
+  padding: 0% 1%;
+}
 
+/* line 10, ../sass/modules/_mybooks.sass */
 .col-onethird {
   float: left;
   width: 31.33333%;
-  padding: 0% 1%; }
+  padding: 0% 1%;
+}
 
+/* line 15, ../sass/modules/_mybooks.sass */
 .col-twothird {
   float: left;
   width: 64.66667%;
-  padding: 0% 1%; }
+  padding: 0% 1%;
+}

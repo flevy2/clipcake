@@ -1,0 +1,23 @@
+/* LISTS */
+
+.nav-list
+    margin-right: 0
+    float: right
+
+    li
+        margin: 0
+        display: inline-block
+
+    a:link, a:visited, a:hover, a:active, a:focus
+        text-decoration: none
+        padding: 0% 2%
+        border-right: 0.15em solid $bold-color
+
+        &:last-child
+            border: none
+
+    a:link, a:visited
+        color: $bold-color
+
+    .active, a:hover, a:active, a:focus
+        color: $red

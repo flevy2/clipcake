@@ -16,9 +16,13 @@
                     <img src='images/logo-name.png' alt='clipcake'>
                 .container-btn
                     .btn
-                        <a href="#">Get started</a>
+                        %a(href='#')Get started
                 %nav
-                    <a href='#'>How it works</a> <a href='#'>My books</a>
+                    %ul.nav-list
+                        %li
+                            %a.active(href='#')How it works
+                        %li
+                            %a(href='#')My books
         .hero-bg.header-cover
             .container.hero
         .col-3-bg
